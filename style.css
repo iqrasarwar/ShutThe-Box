@@ -1,0 +1,30 @@
+.row
+{
+   display: flex;
+   flex-direction: row;
+}
+.dice
+{
+   border: 1px gray solid;
+   padding: 5px;
+   border-right: none;
+}
+.roll, .dice p
+{
+   display: inline;
+}
+.btns
+{
+   border: 1px solid gray;
+   padding: 5px;
+   border-right: none;
+}
+.finished
+{
+   color: red;
+   background-color: black;
+   text-align: center;
+   font-size: larger;
+   width: max-content;
+   margin: auto;
+}

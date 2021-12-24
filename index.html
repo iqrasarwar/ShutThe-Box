@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SHUT THE BOX</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>SHUT THE BOX</h1>
+   <h2>THE RULES</h2>
+   <ol>
+      <li>Each turn, you roll the dice (or die) and select 1 or more boxes which sum to value of your roll.</li>
+      <li>You will not be allowed to pick the boxes which you choose on subsequent turns.</li>
+      <li>When the sum of boxes which are left is less than or equal to 6, you'll only roll a single dice.</li>
+      <li>When you cannot make a move or you give up, the sum of the boxes which are left gives your score.</li>
+      <li>Lower scores are better and a score of 0 is called "Shutting the Box".</li>
+   </ol>
+   <h2>DICE ROLL</h2>
+   <div class="dice">
+      <button class="roll" onclick="rollDice()">Roll Dice</button>
+      <p>Result:<span class="result">0,0</span></p>
+   </div>
+   <h2>BOX SELECTIONS</h2>
+   <div class="row">
+      <div class="col">
+         <p>1</p>
+         <input type="checkbox" value=1>
+      </div>
+      <div class="col">
+         <p>2</p>
+         <input type="checkbox" value=2>
+      </div>
+      <div class="col">
+         <p>3</p>
+         <input type="checkbox" value=3>
+      </div>
+      <div class="col">
+         <p>4</p>
+         <input type="checkbox" value=4>
+      </div>
+      <div class="col">
+         <p>5</p>
+         <input type="checkbox" value=5>
+      </div>
+      <div class="col">
+         <p>6</p>
+         <input type="checkbox" value=6>
+      </div>
+      <div class="col">
+         <p>7</p>
+         <input type="checkbox" value=7>
+      </div>
+      <div class="col">
+         <p>8</p>
+         <input type="checkbox" value=8>
+      </div>
+      <div class="col">
+         <p>9</p>
+         <input type="checkbox" value=9>
+      </div>
+   </div>
+   <div class="btns">
+      <button name="submit" onclick="submitMove()">
+         submit box selection
+      </button>
+      <button class="giveup" onclick="giveUp()">
+         I give up I can't make valid move
+      </button>
+   </div>
+   <section class="finished"></section>
+   <script src="script.js"></script>
+</body>
+</html>
