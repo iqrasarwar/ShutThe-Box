@@ -1,37 +1,30 @@
-.num
+.row
 {
-   margin: 5px;
-   padding:  5px 10px;
-   width: 50px;
-   background-color: rgb(204, 196, 196);
-   border: none;
-   border-radius: 9px;
+   display: flex;
+   flex-direction: row;
 }
-#eq
+.dice
 {
-    margin: 5px;
-    width: 425px;
-    border: 2px inset rgb(33, 146, 199);
-    border-radius: 15px;
-    height: 50px;
+   border: 1px gray solid;
+   padding: 5px;
+   border-right: none;
 }
-.cal
+.roll, .dice p
 {
-   border: 2px inset rgb(179, 50, 172);
+   display: inline;
+}
+.btns
+{
+   border: 1px solid gray;
+   padding: 5px;
+   border-right: none;
+}
+.finished
+{
+   color: red;
+   background-color: black;
+   text-align: center;
+   font-size: larger;
    width: max-content;
    margin: auto;
-   margin-top: 14%;
-}
-body
-{
-   background-color: rgb(241, 116, 231);
-}
-.rnum
-{
-   background-color: rgb(231, 227, 243);
-   font-weight: bold;
-}
-.equal
-{
-   background-color: blue;
 }
